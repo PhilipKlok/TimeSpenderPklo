@@ -55,6 +55,7 @@
             this.btnShowPklo.TabIndex = 1;
             this.btnShowPklo.Text = "Show";
             this.btnShowPklo.UseVisualStyleBackColor = true;
+            this.btnShowPklo.Click += new System.EventHandler(this.btnShowPklo_Click);
             // 
             // cmbActivityPklo
             // 
