@@ -28,8 +28,11 @@ namespace TimeSpender19septPKlok
             InitializeComponent();
         }
 
+
+        // Saves the work you have selected
         private void btnSafeWorkPklo_Click(object sender, EventArgs e)
         {
+            // When the combobox is greater or equal to 0 then the richtexhtbox doesn't have to be evaluated
             if (cmbActivityPklo.SelectedIndex >= 0 || rtbActivityPklo.Text != "")
             {
                 if (cmbActivityPklo.SelectedIndex >= 0)
@@ -77,17 +80,20 @@ namespace TimeSpender19septPKlok
 
         }
 
+        // Click Event for the show button
         private void btnShowPklo_Click(object sender, EventArgs e)
         {
-
             string allTaskPklo = "";
+            // Saves every task with the amount of seconds 
             foreach (var task in listTaskPklo)
             {
                 allTaskPklo = allTaskPklo + task.GetTaskNamePklo() + " for " + task.GetTaskTimePklo() + " seconds.\n";
             }
+            // Shows all the tasks you have selected and saved
             MessageBox.Show(allTaskPklo);
         }
 
+        // Changing the background of the form
         private void tmrChangeColorPklo_Tick(object sender, EventArgs e)
         {
             if (BackColor == Color.White)
