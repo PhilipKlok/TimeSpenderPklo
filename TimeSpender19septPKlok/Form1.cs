@@ -18,6 +18,11 @@ namespace TimeSpender19septPKlok
         int taskTimePklo = 3;
         bool taskAlreadyInListPklo = false;
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            tmrChangeColorPklo.Start();
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -68,6 +73,8 @@ namespace TimeSpender19septPKlok
             rtbActivityPklo.Text = "";
             taskAlreadyInListPklo = false;
 
+
+
         }
 
         private void btnShowPklo_Click(object sender, EventArgs e)
@@ -79,6 +86,19 @@ namespace TimeSpender19septPKlok
                 allTaskPklo = allTaskPklo + task.GetTaskNamePklo() + " for " + task.GetTaskTimePklo() + " seconds.\n";
             }
             MessageBox.Show(allTaskPklo);
+        }
+
+        private void tmrChangeColorPklo_Tick(object sender, EventArgs e)
+        {
+            if (BackColor == Color.White)
+            {
+                BackColor = Color.Red;
+            }
+
+            else
+            {
+                BackColor = Color.White;
+            }
         }
     }
 }

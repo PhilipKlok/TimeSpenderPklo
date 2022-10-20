@@ -78,6 +78,14 @@
             this.rtbActivityPklo.TabIndex = 3;
             this.rtbActivityPklo.Text = "";
             // 
+            // tmrAppRemovePklo
+            // 
+            // 
+            // tmrChangeColorPklo
+            // 
+            this.tmrChangeColorPklo.Interval = 500;
+            this.tmrChangeColorPklo.Tick += new System.EventHandler(this.tmrChangeColorPklo_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -89,6 +97,7 @@
             this.Controls.Add(this.btnSafeWorkPklo);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
