@@ -37,11 +37,12 @@
             this.tmrChangeColorPklo = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnSettingsPklo = new System.Windows.Forms.Button();
+            this.lblTimeSpenderPklo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSafeWorkPklo
             // 
-            this.btnSafeWorkPklo.Location = new System.Drawing.Point(21, 42);
+            this.btnSafeWorkPklo.Location = new System.Drawing.Point(16, 66);
             this.btnSafeWorkPklo.Name = "btnSafeWorkPklo";
             this.btnSafeWorkPklo.Size = new System.Drawing.Size(75, 23);
             this.btnSafeWorkPklo.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             // btnShowPklo
             // 
-            this.btnShowPklo.Location = new System.Drawing.Point(102, 42);
+            this.btnShowPklo.Location = new System.Drawing.Point(97, 66);
             this.btnShowPklo.Name = "btnShowPklo";
             this.btnShowPklo.Size = new System.Drawing.Size(80, 23);
             this.btnShowPklo.TabIndex = 1;
@@ -67,14 +68,14 @@
             "Doing hard stuff",
             "Having a meeting",
             "Sleep"});
-            this.cmbActivityPklo.Location = new System.Drawing.Point(49, 71);
+            this.cmbActivityPklo.Location = new System.Drawing.Point(44, 95);
             this.cmbActivityPklo.Name = "cmbActivityPklo";
             this.cmbActivityPklo.Size = new System.Drawing.Size(174, 21);
             this.cmbActivityPklo.TabIndex = 2;
             // 
             // rtbActivityPklo
             // 
-            this.rtbActivityPklo.Location = new System.Drawing.Point(49, 99);
+            this.rtbActivityPklo.Location = new System.Drawing.Point(44, 123);
             this.rtbActivityPklo.Name = "rtbActivityPklo";
             this.rtbActivityPklo.Size = new System.Drawing.Size(174, 160);
             this.rtbActivityPklo.TabIndex = 3;
@@ -97,7 +98,7 @@
             // 
             // btnSettingsPklo
             // 
-            this.btnSettingsPklo.Location = new System.Drawing.Point(188, 42);
+            this.btnSettingsPklo.Location = new System.Drawing.Point(183, 66);
             this.btnSettingsPklo.Name = "btnSettingsPklo";
             this.btnSettingsPklo.Size = new System.Drawing.Size(80, 23);
             this.btnSettingsPklo.TabIndex = 4;
@@ -105,11 +106,22 @@
             this.btnSettingsPklo.UseVisualStyleBackColor = true;
             this.btnSettingsPklo.Click += new System.EventHandler(this.btnSettingsPklo_Click);
             // 
+            // lblTimeSpenderPklo
+            // 
+            this.lblTimeSpenderPklo.AutoSize = true;
+            this.lblTimeSpenderPklo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeSpenderPklo.Location = new System.Drawing.Point(46, 18);
+            this.lblTimeSpenderPklo.Name = "lblTimeSpenderPklo";
+            this.lblTimeSpenderPklo.Size = new System.Drawing.Size(172, 31);
+            this.lblTimeSpenderPklo.TabIndex = 5;
+            this.lblTimeSpenderPklo.Text = "Timespender";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(275, 315);
+            this.Controls.Add(this.lblTimeSpenderPklo);
             this.Controls.Add(this.btnSettingsPklo);
             this.Controls.Add(this.rtbActivityPklo);
             this.Controls.Add(this.cmbActivityPklo);
@@ -119,6 +131,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -132,6 +145,7 @@
         private System.Windows.Forms.Timer tmrChangeColorPklo;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Button btnSettingsPklo;
+        private System.Windows.Forms.Label lblTimeSpenderPklo;
     }
 }
 
