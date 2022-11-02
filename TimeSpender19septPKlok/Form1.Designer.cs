@@ -35,11 +35,13 @@
             this.rtbActivityPklo = new System.Windows.Forms.RichTextBox();
             this.tmrAppRemovePklo = new System.Windows.Forms.Timer(this.components);
             this.tmrChangeColorPklo = new System.Windows.Forms.Timer(this.components);
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.btnSettingsPklo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSafeWorkPklo
             // 
-            this.btnSafeWorkPklo.Location = new System.Drawing.Point(49, 42);
+            this.btnSafeWorkPklo.Location = new System.Drawing.Point(21, 42);
             this.btnSafeWorkPklo.Name = "btnSafeWorkPklo";
             this.btnSafeWorkPklo.Size = new System.Drawing.Size(75, 23);
             this.btnSafeWorkPklo.TabIndex = 0;
@@ -49,7 +51,7 @@
             // 
             // btnShowPklo
             // 
-            this.btnShowPklo.Location = new System.Drawing.Point(143, 42);
+            this.btnShowPklo.Location = new System.Drawing.Point(102, 42);
             this.btnShowPklo.Name = "btnShowPklo";
             this.btnShowPklo.Size = new System.Drawing.Size(80, 23);
             this.btnShowPklo.TabIndex = 1;
@@ -80,17 +82,35 @@
             // 
             // tmrAppRemovePklo
             // 
+            this.tmrAppRemovePklo.Interval = 1000;
+            this.tmrAppRemovePklo.Tick += new System.EventHandler(this.tmrAppRemovePklo_Tick);
             // 
             // tmrChangeColorPklo
             // 
             this.tmrChangeColorPklo.Interval = 500;
             this.tmrChangeColorPklo.Tick += new System.EventHandler(this.tmrChangeColorPklo_Tick);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
+            // btnSettingsPklo
+            // 
+            this.btnSettingsPklo.Location = new System.Drawing.Point(188, 42);
+            this.btnSettingsPklo.Name = "btnSettingsPklo";
+            this.btnSettingsPklo.Size = new System.Drawing.Size(80, 23);
+            this.btnSettingsPklo.TabIndex = 4;
+            this.btnSettingsPklo.Text = "Settings";
+            this.btnSettingsPklo.UseVisualStyleBackColor = true;
+            this.btnSettingsPklo.Click += new System.EventHandler(this.btnSettingsPklo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(275, 315);
+            this.Controls.Add(this.btnSettingsPklo);
             this.Controls.Add(this.rtbActivityPklo);
             this.Controls.Add(this.cmbActivityPklo);
             this.Controls.Add(this.btnShowPklo);
@@ -110,6 +130,8 @@
         private System.Windows.Forms.RichTextBox rtbActivityPklo;
         private System.Windows.Forms.Timer tmrAppRemovePklo;
         private System.Windows.Forms.Timer tmrChangeColorPklo;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Button btnSettingsPklo;
     }
 }
 

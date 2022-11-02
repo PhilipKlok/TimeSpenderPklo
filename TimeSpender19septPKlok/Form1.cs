@@ -15,8 +15,10 @@ namespace TimeSpender19septPKlok
         AddTaskPklo addingTasksPklo = null;
         List<AddTaskPklo> listTaskPklo = new List<AddTaskPklo>();
 
-        int taskTimePklo = 3;
+       // int taskTimePklo = 3;
         bool taskAlreadyInListPklo = false;
+        int defaultTaskTime = 3;
+        int timeCounter = 0;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -39,16 +41,16 @@ namespace TimeSpender19septPKlok
                 {
                     foreach (var task in listTaskPklo)
                     {
-                        if (task.GetTaskNamePklo() == cmbActivityPklo.SelectedIndex.ToString())
+                        if (task.GetTaskNamePklo() == cmbActivityPklo.SelectedItem.ToString())
                         {
-                            task.SetTaskTimePklo(taskTimePklo);
+                            task.SetTaskTimePklo(defaultTaskTime);
                             taskAlreadyInListPklo = true;
                         }
                     }
 
                     if (taskAlreadyInListPklo == false)
                     {
-                        addingTasksPklo = new AddTaskPklo(cmbActivityPklo.SelectedItem.ToString(), 0);
+                        addingTasksPklo = new AddTaskPklo(cmbActivityPklo.SelectedItem.ToString(), defaultTaskTime);
                         listTaskPklo.Add(addingTasksPklo);
                     }
                 }
@@ -59,7 +61,7 @@ namespace TimeSpender19septPKlok
                     {
                         if (task.GetTaskNamePklo() == rtbActivityPklo.Text)
                         {
-                            task.SetTaskTimePklo(taskTimePklo);
+                            task.SetTaskTimePklo(defaultTaskTime);
                             taskAlreadyInListPklo = true;
                         }
                     }
@@ -76,7 +78,11 @@ namespace TimeSpender19septPKlok
             rtbActivityPklo.Text = "";
             taskAlreadyInListPklo = false;
 
+            this.Hide();
 
+            timeCounter = 0;
+
+            tmrAppRemovePklo.Start();
 
         }
 
@@ -105,6 +111,25 @@ namespace TimeSpender19septPKlok
             {
                 BackColor = Color.White;
             }
+        }
+
+        private void tmrAppRemovePklo_Tick(object sender, EventArgs e)
+        {
+            timeCounter++;
+
+            if(timeCounter == defaultTaskTime)
+            {
+                this.Show();
+
+                tmrAppRemovePklo.Stop();
+            }
+        }
+
+        private void btnSettingsPklo_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            frm.Show();
+            this.Hide();
         }
     }
 }

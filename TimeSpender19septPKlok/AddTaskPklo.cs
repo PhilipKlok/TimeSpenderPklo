@@ -34,7 +34,7 @@ namespace TimeSpender19septPKlok
         }
         public void SetTaskTimePklo(int c_taskTimePklo)
         {
-            taskTimePklo = c_taskTimePklo;
+            taskTimePklo += c_taskTimePklo;
         }
     }
 }
