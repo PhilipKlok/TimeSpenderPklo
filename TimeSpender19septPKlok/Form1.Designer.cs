@@ -120,7 +120,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 315);
+            this.ClientSize = new System.Drawing.Size(269, 304);
             this.Controls.Add(this.lblTimeSpenderPklo);
             this.Controls.Add(this.btnSettingsPklo);
             this.Controls.Add(this.rtbActivityPklo);
