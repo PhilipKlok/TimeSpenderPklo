@@ -51,7 +51,7 @@ namespace TimeSpender19septPKlok
             // 
             this.lblLogFilePklo.AutoSize = true;
             this.lblLogFilePklo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogFilePklo.Location = new System.Drawing.Point(13, 75);
+            this.lblLogFilePklo.Location = new System.Drawing.Point(23, 63);
             this.lblLogFilePklo.Name = "lblLogFilePklo";
             this.lblLogFilePklo.Size = new System.Drawing.Size(125, 18);
             this.lblLogFilePklo.TabIndex = 0;
@@ -59,14 +59,14 @@ namespace TimeSpender19septPKlok
             // 
             // txbLogFileLocationPklo
             // 
-            this.txbLogFileLocationPklo.Location = new System.Drawing.Point(144, 76);
+            this.txbLogFileLocationPklo.Location = new System.Drawing.Point(154, 63);
             this.txbLogFileLocationPklo.Name = "txbLogFileLocationPklo";
-            this.txbLogFileLocationPklo.Size = new System.Drawing.Size(371, 20);
+            this.txbLogFileLocationPklo.Size = new System.Drawing.Size(360, 20);
             this.txbLogFileLocationPklo.TabIndex = 1;
             // 
             // btnBrowsePklo
             // 
-            this.btnBrowsePklo.Location = new System.Drawing.Point(521, 75);
+            this.btnBrowsePklo.Location = new System.Drawing.Point(520, 63);
             this.btnBrowsePklo.Name = "btnBrowsePklo";
             this.btnBrowsePklo.Size = new System.Drawing.Size(75, 23);
             this.btnBrowsePklo.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace TimeSpender19septPKlok
             // 
             this.lblLogIntervalPklo.AutoSize = true;
             this.lblLogIntervalPklo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogIntervalPklo.Location = new System.Drawing.Point(43, 123);
+            this.lblLogIntervalPklo.Location = new System.Drawing.Point(42, 110);
             this.lblLogIntervalPklo.Name = "lblLogIntervalPklo";
             this.lblLogIntervalPklo.Size = new System.Drawing.Size(83, 18);
             this.lblLogIntervalPklo.TabIndex = 3;
@@ -97,14 +97,14 @@ namespace TimeSpender19septPKlok
             "8",
             "9",
             "10"});
-            this.lbxLogIntervalPklo.Location = new System.Drawing.Point(27, 144);
+            this.lbxLogIntervalPklo.Location = new System.Drawing.Point(26, 131);
             this.lbxLogIntervalPklo.Name = "lbxLogIntervalPklo";
             this.lbxLogIntervalPklo.Size = new System.Drawing.Size(120, 134);
             this.lbxLogIntervalPklo.TabIndex = 4;
             // 
             // btnClosePklo
             // 
-            this.btnClosePklo.Location = new System.Drawing.Point(448, 364);
+            this.btnClosePklo.Location = new System.Drawing.Point(439, 304);
             this.btnClosePklo.Name = "btnClosePklo";
             this.btnClosePklo.Size = new System.Drawing.Size(75, 23);
             this.btnClosePklo.TabIndex = 5;
@@ -116,7 +116,7 @@ namespace TimeSpender19septPKlok
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(256, 107);
+            this.label1.Location = new System.Drawing.Point(255, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 18);
             this.label1.TabIndex = 6;
@@ -125,14 +125,14 @@ namespace TimeSpender19septPKlok
             // lbxTasksPklo
             // 
             this.lbxTasksPklo.FormattingEnabled = true;
-            this.lbxTasksPklo.Location = new System.Drawing.Point(186, 144);
+            this.lbxTasksPklo.Location = new System.Drawing.Point(185, 131);
             this.lbxTasksPklo.Name = "lbxTasksPklo";
             this.lbxTasksPklo.Size = new System.Drawing.Size(187, 134);
             this.lbxTasksPklo.TabIndex = 7;
             // 
             // txbAddingTaskPklo
             // 
-            this.txbAddingTaskPklo.Location = new System.Drawing.Point(389, 144);
+            this.txbAddingTaskPklo.Location = new System.Drawing.Point(388, 131);
             this.txbAddingTaskPklo.Name = "txbAddingTaskPklo";
             this.txbAddingTaskPklo.Size = new System.Drawing.Size(207, 20);
             this.txbAddingTaskPklo.TabIndex = 8;
@@ -141,7 +141,7 @@ namespace TimeSpender19septPKlok
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(445, 123);
+            this.label2.Location = new System.Drawing.Point(444, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 18);
             this.label2.TabIndex = 9;
@@ -149,7 +149,7 @@ namespace TimeSpender19septPKlok
             // 
             // btnAddTaskPklo
             // 
-            this.btnAddTaskPklo.Location = new System.Drawing.Point(459, 170);
+            this.btnAddTaskPklo.Location = new System.Drawing.Point(458, 157);
             this.btnAddTaskPklo.Name = "btnAddTaskPklo";
             this.btnAddTaskPklo.Size = new System.Drawing.Size(75, 23);
             this.btnAddTaskPklo.TabIndex = 10;
@@ -158,7 +158,7 @@ namespace TimeSpender19septPKlok
             // 
             // btnDeleteTaskPklo
             // 
-            this.btnDeleteTaskPklo.Location = new System.Drawing.Point(242, 284);
+            this.btnDeleteTaskPklo.Location = new System.Drawing.Point(241, 271);
             this.btnDeleteTaskPklo.Name = "btnDeleteTaskPklo";
             this.btnDeleteTaskPklo.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteTaskPklo.TabIndex = 11;
@@ -167,7 +167,7 @@ namespace TimeSpender19septPKlok
             // 
             // btnFinishedPklo
             // 
-            this.btnFinishedPklo.Location = new System.Drawing.Point(27, 364);
+            this.btnFinishedPklo.Location = new System.Drawing.Point(18, 304);
             this.btnFinishedPklo.Name = "btnFinishedPklo";
             this.btnFinishedPklo.Size = new System.Drawing.Size(110, 23);
             this.btnFinishedPklo.TabIndex = 12;
@@ -176,7 +176,7 @@ namespace TimeSpender19septPKlok
             // 
             // btnSaveSettingsPklo
             // 
-            this.btnSaveSettingsPklo.Location = new System.Drawing.Point(529, 364);
+            this.btnSaveSettingsPklo.Location = new System.Drawing.Point(520, 304);
             this.btnSaveSettingsPklo.Name = "btnSaveSettingsPklo";
             this.btnSaveSettingsPklo.Size = new System.Drawing.Size(75, 23);
             this.btnSaveSettingsPklo.TabIndex = 13;
@@ -187,7 +187,7 @@ namespace TimeSpender19septPKlok
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(251, 125);
+            this.label3.Location = new System.Drawing.Point(250, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 15);
             this.label3.TabIndex = 14;
@@ -197,7 +197,7 @@ namespace TimeSpender19septPKlok
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(254, 20);
+            this.label4.Location = new System.Drawing.Point(248, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 29);
             this.label4.TabIndex = 15;
@@ -207,7 +207,7 @@ namespace TimeSpender19septPKlok
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 394);
+            this.ClientSize = new System.Drawing.Size(607, 336);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSaveSettingsPklo);
